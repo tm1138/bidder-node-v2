@@ -1,0 +1,20 @@
+{
+    "dbConfig": {
+        "host": "127.0.0.1",
+        "port": "27017",
+        "username": "bidderadmin",
+        "password": "password",
+        "database": "bidderDB",
+        "authsource": "admin"
+    },
+    "Admin": {
+
+    },
+    "Server": {
+        "port": 3000
+    },
+    "Session": {
+        "session_expiry_in_minutes": 5,
+        "secret": "something"
+    }
+}

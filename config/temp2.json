@@ -1,0 +1,57 @@
+{
+    "errors": {
+      "first_name": {
+        "message": "Path `first_name` is required.",
+        "name": "ValidatorError",
+        "properties": {
+          "message": "Path `first_name` is required.",
+          "type": "required",
+          "path": "first_name"
+        },
+        "kind": "required",
+        "path": "first_name"
+      },
+      "username": {
+        "message": "Error, expected `username` to be unique. Value: `tmartin`",
+        "name": "ValidatorError",
+        "properties": {
+          "message": "Error, expected `username` to be unique. Value: `tmartin`",
+          "type": "unique",
+          "path": "username",
+          "value": "tmartin"
+        },
+        "kind": "unique",
+        "path": "username",
+        "value": "tmartin"
+      },
+      "email_id": {
+        "message": "Error, expected `email_id` to be unique. Value: `abcd@gmail.com`",
+        "name": "ValidatorError",
+        "properties": {
+          "message": "Error, expected `email_id` to be unique. Value: `abcd@gmail.com`",
+          "type": "unique",
+          "path": "email_id",
+          "value": "abcd@gmail.com"
+        },
+        "kind": "unique",
+        "path": "email_id",
+        "value": "abcd@gmail.com"
+      },
+      "mob_number": {
+        "message": "Error, expected `mob_number` to be unique. Value: `1234567890`",
+        "name": "ValidatorError",
+        "properties": {
+          "message": "Error, expected `mob_number` to be unique. Value: `1234567890`",
+          "type": "unique",
+          "path": "mob_number",
+          "value": "1234567890"
+        },
+        "kind": "unique",
+        "path": "mob_number",
+        "value": "1234567890"
+      }
+    },
+    "_message": "customers validation failed",
+    "message": "customers validation failed: first_name: Path `first_name` is required., username: Error, expected `username` to be unique. Value: `tmartin`, email_id: Error, expected `email_id` to be unique. Value: `abcd@gmail.com`, mob_number: Error, expected `mob_number` to be unique. Value: `1234567890`",
+    "name": "ValidationError"
+  }
