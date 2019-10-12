@@ -9,13 +9,12 @@ var DatabaseService = require('./services/service.database');
 databaseService = new DatabaseService(config.dbConfig);
 
 databaseService.Init().
-then(() => 
-{
-    console.log('Connected to mongoDb.....');
-})
-.catch(err => {
-    console.error('Could not connect to mongoDb', err);
-});
+    then(() => {
+        console.log('Connected to mongoDb.....');
+    })
+    .catch(err => {
+        console.error('Could not connect to mongoDb', err);
+    });
 
 //Database section end
 
@@ -61,7 +60,7 @@ app.use('/api/customer', customerRoute);
 //route setting end
 
 
-var server = app.listen(config.Server.port, ()=> {
+var server = app.listen(config.Server.port, () => {
     console.log('Server listening on port ' + config.Server.port);
 })
 
